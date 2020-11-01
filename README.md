@@ -1,1 +1,1 @@
-# edda-vaults
+# EDDA Vaults
