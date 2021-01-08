@@ -1,5 +1,5 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface ISpotLike {
-    function ilks(bytes32) external view returns (address, uint);
+  function ilks(bytes32) external view returns (address, uint256);
 }

@@ -1,22 +1,25 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 pragma experimental ABIEncoderV2;
 
 import "./IStructs.sol";
 
-contract IDyDx is IStructs {
+abstract contract IDyDx is IStructs {
   struct val {
-       uint256 value;
-   }
-
-   struct set {
-      uint128 borrow;
-      uint128 supply;
+    uint256 value;
   }
 
-  function getAccountWei(Info memory account, uint256 marketId) public view returns (Wei memory);
-  function operate(Info[] memory, ActionArgs[] memory) public;
+  struct set {
+    uint128 borrow;
+    uint128 supply;
+  }
 
-  function getEarningsRate() external view returns (val memory);
-  function getMarketInterestRate(uint256 marketId) external view returns (val memory);
-  function getMarketTotalPar(uint256 marketId) external view returns (set memory);
+  function getAccountWei(Info memory account, uint256 marketId) public view virtual returns (Wei memory);
+
+  function operate(Info[] memory, ActionArgs[] memory) public virtual;
+
+  function getEarningsRate() external view virtual returns (val memory);
+
+  function getMarketInterestRate(uint256 marketId) external view virtual returns (val memory);
+
+  function getMarketTotalPar(uint256 marketId) external view virtual returns (set memory);
 }

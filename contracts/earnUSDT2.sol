@@ -1,12 +1,12 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.6;
 pragma experimental ABIEncoderV2;
 
-import "./earnTOKEN2.sol";
+import "./Earn2.sol";
 
-contract earnUSDT2 is earnTOKEN2 {
-  constructor () public earnTOKEN2("EDDA earnUSDT", "earnUSDT", 18) {
-    token = address(0xdAC17F958D2ee523a2206206994597C13D831ec7);
-    apr = address(0xdD6d648C991f7d47454354f4Ef326b04025a48A8);
+contract earnUSDT2 is Earn2 {
+  constructor(address token_, address apr_) public Earn2("EDDA earnUSDT", "earnUSDT", 6) {
+    token = token_; //// address(0xdAC17F958D2ee523a2206206994597C13D831ec7);
+    apr = apr_;
     dydx = address(0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e);
     aave = address(0x24a42fD28C976A61Df5D00D0599C34c4f90748c8);
     fulcrum = address(0xF013406A0B1d544238083DF0B93ad0d2cBE0f65f);

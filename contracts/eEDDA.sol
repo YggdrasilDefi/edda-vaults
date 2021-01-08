@@ -1,7 +1,7 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 import "./eVault.sol";
 
 contract eEDDA is eVault {
-    constructor (address _token, address _controller) public eVault(_token, _controller) {}
+  constructor(address _token, address _controller) public eVault(_token, _controller) {}
 }

@@ -20,9 +20,9 @@
 pragma solidity ^0.6.6;
 
 // TUSD
-contract USDT {
-  string public name = "Tether USD";
-  string public symbol = "USDT";
+contract SUSD {
+  string public name = "Synth sUSD";
+  string public symbol = "sUSD";
   uint8 public decimals = 18;
 
   event Approval(address indexed src, address indexed guy, uint256 wad);

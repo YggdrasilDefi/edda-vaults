@@ -1,8 +1,11 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface IPotLike {
-    function pie(address) external view returns (uint);
-    function drip() external returns (uint);
-    function join(uint) external;
-    function exit(uint) external;
+  function pie(address) external view returns (uint256);
+
+  function drip() external returns (uint256);
+
+  function join(uint256) external;
+
+  function exit(uint256) external;
 }

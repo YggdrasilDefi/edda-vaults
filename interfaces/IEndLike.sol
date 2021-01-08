@@ -1,9 +1,13 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface IEndLike {
-    function fix(bytes32) external view returns (uint);
-    function cash(bytes32, uint) external;
-    function free(bytes32) external;
-    function pack(uint) external;
-    function skim(bytes32, address) external;
+  function fix(bytes32) external view returns (uint256);
+
+  function cash(bytes32, uint256) external;
+
+  function free(bytes32) external;
+
+  function pack(uint256) external;
+
+  function skim(bytes32, address) external;
 }

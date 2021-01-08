@@ -1,5 +1,5 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface IAToken {
-    function redeem(uint256 amount) external;
+  function redeem(uint256 amount) external;
 }

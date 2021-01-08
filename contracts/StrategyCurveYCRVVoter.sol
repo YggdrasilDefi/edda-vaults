@@ -1,6 +1,5 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 contract StrategyCurveYCRVVoter {
-    constructor() public {
-    }
+  constructor() public {}
 }

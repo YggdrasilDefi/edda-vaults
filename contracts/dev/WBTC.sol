@@ -20,10 +20,10 @@
 pragma solidity ^0.6.6;
 
 // TUSD
-contract USDT {
-  string public name = "Tether USD";
-  string public symbol = "USDT";
-  uint8 public decimals = 18;
+contract WBTC {
+  string public name = "Wrapped BTC";
+  string public symbol = "wBTC";
+  uint8 public decimals = 8;
 
   event Approval(address indexed src, address indexed guy, uint256 wad);
   event Transfer(address indexed src, address indexed dst, uint256 wad);

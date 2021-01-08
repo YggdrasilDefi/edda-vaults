@@ -1,6 +1,7 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface IOSMedianizer {
-    function read() external view returns (uint, bool);
-    function foresight() external view returns (uint, bool);
+  function read() external view returns (uint256, bool);
+
+  function foresight() external view returns (uint256, bool);
 }

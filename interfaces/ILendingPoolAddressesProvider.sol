@@ -1,6 +1,7 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface ILendingPoolAddressesProvider {
-    function getLendingPool() external view returns (address);
-    function getLendingPoolCore() external view returns (address);
+  function getLendingPool() external view returns (address);
+
+  function getLendingPoolCore() external view returns (address);
 }

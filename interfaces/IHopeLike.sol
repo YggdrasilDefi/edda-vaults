@@ -1,6 +1,7 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface IHopeLike {
-    function hope(address) external;
-    function nope(address) external;
+  function hope(address) external;
+
+  function nope(address) external;
 }

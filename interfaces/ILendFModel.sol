@@ -1,5 +1,9 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface ILendFModel {
-    function getSupplyRate(address asset, uint cash, uint borrows) external view returns (uint, uint);
+  function getSupplyRate(
+    address asset,
+    uint256 cash,
+    uint256 borrows
+  ) external view returns (uint256, uint256);
 }

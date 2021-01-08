@@ -1,7 +1,10 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.6.6;
 
 interface IIEarnManager {
-    function recommend(address _token) external view returns (
+  function recommend(address _token)
+    external
+    view
+    returns (
       string memory choice,
       uint256 capr,
       uint256 iapr,
